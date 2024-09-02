@@ -34,7 +34,7 @@ const HabitCalendar = () => {
     const completedDates = getCompletedDates();
   
     // check if the habit was completed on x day
-    const dayCompleted = ({ date }) => {
+    const tileClassName = ({ date }) => {
       if (completedDates.includes(date.toDateString())) {
         return 'completed-date'; // if it was completed -> add the css
       }
@@ -47,7 +47,7 @@ const HabitCalendar = () => {
         <Calendar
           onChange={handleDateChange}
           value={date}
-          dayCompleted={dayCompleted}
+          tileClassName={tileClassName}
         />
       </div>
     );
