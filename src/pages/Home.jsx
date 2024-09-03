@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../index.css';
 import { useSelector } from 'react-redux';
 import Habit from '../components/Habit';
